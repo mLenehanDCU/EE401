@@ -1,0 +1,151 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+
+% -----------------
+% START OF PREAMBLE
+% -----------------
+\documentclass[12pt,a4paper]{scrartcl}
+
+
+% Commands
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+
+% Packages
+\usepackage{fontspec}
+\usepackage{eurosym}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{upquote}
+\usepackage{microtype}
+\usepackage{longtable,booktabs}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage[normalem]{ulem}
+\usepackage{fancyhdr}
+\usepackage[setpagesize=false,
+            unicode=false,
+            colorlinks=true,
+            urlcolor=blue,
+            linkcolor=black]{hyperref}
+\usepackage{float}
+\usepackage{tabu}
+\usepackage{mathptmx}
+
+
+% Required fix for fancyhdr
+\DeclareOldFontCommand{\rm}{\normalfont\rmfamily}{\mathrm}
+% Fancy headers and footers settings
+\pagestyle{fancy}
+\lhead{$left-header$}
+\rhead{$right-header$}
+
+
+% Required for syntax highlighting
+$highlighting-macros$
+
+
+% Don't let images overflow the page
+% Can still explicit set width/height/options for an image
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+
+
+% Make links footnotes instead of hotlinks
+\renewcommand{\href}[2]{#2\footnote{\url{#1}}}
+
+
+% Avoid problems with \sout in headers with hyperref:
+\pdfstringdefDisableCommands{\renewcommand{\sout}{}}
+
+
+% No paragraph indentation
+% and set space between paragraphs
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1em plus 2pt minus 1pt}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+
+
+% No section numbering
+\makeatletter
+\def\@seccntformat#1{%
+  \expandafter\ifx\csname c@#1\endcsname\c@section\else
+  \csname the#1\endcsname\quad
+  \fi}
+\makeatother
+
+
+% -----------------
+%  END OF PREAMBLE
+% -----------------
+ 
+
+\begin{document}
+
+\begin{titlepage}
+  \begin{center}
+    \vspace{1cm}
+    {\Large\textbf{DCU School of Electronic Engineering Assignment Submission}}
+
+    \vspace{0.5cm}
+    \begin{tabu}{ X[l] X[2l] }
+      \textbf{Student Name(s):} & \textbf{Michael Lenehan} \\
+      \textbf{Student Number(s):} & \textbf{15410402} \\
+      \textbf{Programme:} & \textbf{B.Eng in Electronic and Computer Engineering} \\
+      \textbf{Module Code:} & \textbf{EE401} \\
+      \textbf{Lecturer:} & \textbf{R. Scaife} \\    
+      \textbf{Project Due Date:} & \textbf{16/12/2018}
+    \end{tabu}
+
+    \vspace{0.5cm}
+    \textbf{Declaration}
+ \end{center}
+    \begin{bfseries}
+    I declare that this material, which I now submit for assessment, is entirely
+    my own work and has not been taken from the work of others, save and to the
+    extent that such work has been cited andacknowledged within the text of my
+    work. I understand thatplagiarism, collusion, and copying is a grave and
+    serious offence in the university and accept the penalties that would be
+    imposed should I engage in plagiarism, collusion, or copying. I have read
+    and understood the Assignment Regulations set out in the module documentation.
+    I have identified and included the source of all facts, ideas, opinions,
+    viewpoints of others in the assignment references. Direct quotations from
+    books, journal articles, internet sources, module text, or any other source
+    whatsoever are acknowledged and the source cited are identified in the
+    assignment references. 
+    
+    I have not copied or paraphrased an extract of any
+    length from any source without identifying the source and using quotation
+    marks as appropriate. Any images, audio recordings, video or other materials
+    have likewise been originated and produced by me or are fully acknowledged
+    and identified.
+    
+    This assignment, or any part of it, has not been previously
+    submitted by me or any other person for assessment on this or any other 
+    course of study. I have read and understood the referencing guidelines found
+    at http://www.library.dcu.ie/citing\&refguide08.pdf and/or recommended in the
+    assignment guidelines. 
+    
+    I understand that I may be required to discuss with
+    the module lecturer/s the contents of this submission.
+    
+    I/me/my incorporates
+    we/us/our in the case of group work, which is signed by all of us.
+    \end{bfseries}
+
+    \textbf{Signed: \underline{\textit{Michael Lenehan}}}
+    
+\end{titlepage}
+
+\begin{center}
+  \hfill \break%
+  $if(title)$\Huge{$title$}\\[0.5em]$endif$
+  $if(authors)$\Large{$authors$}\\[2.5em]$endif$
+\end{center}
+
+$body$
+
+\end{document}
