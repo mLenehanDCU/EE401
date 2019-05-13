@@ -1,0 +1,59 @@
+
+H_Z =
+ 
+    z^6 - 1
+  ------------
+  z^6 - 0.5314
+ 
+Sample time: 1 seconds
+Discrete-time transfer function.
+
+{Undefined function or variable 'H_z'.
+} 
+
+H_z =
+ 
+    z^6 - 1
+  ------------
+  z^6 - 0.5314
+ 
+Sample time: 1 seconds
+Discrete-time transfer function.
+
+
+H_z =
+ 
+    z^6 - 1
+  ------------
+  z^6 - 0.5314
+ 
+Sample time: 1 seconds
+Discrete-time transfer function.
+
+
+z =
+
+  -1.0000 + 0.0000i
+  -0.5000 + 0.8660i
+  -0.5000 - 0.8660i
+   0.5000 + 0.8660i
+   0.5000 - 0.8660i
+   1.0000 + 0.0000i
+
+
+p =
+
+  -0.9000 + 0.0000i
+  -0.4500 + 0.7794i
+  -0.4500 - 0.7794i
+   0.9000 + 0.0000i
+   0.4500 + 0.7794i
+   0.4500 - 0.7794i
+
+
+k =
+
+     1
+
+{Undefined function or variable 'abd'.
+} 
